@@ -16,6 +16,7 @@ function App() {
 
   return (
     <main id="app" className="w-full flex flex-col items-center">
+      <h1 className="p-5 text-4xl font-bold">Fruit Stand</h1>
       <Search query={query} setQuery={setQuery} />
       <List length={filteredList().length} query={query}>
         <ListItems list={filteredList()} query={query} setQuery={setQuery} />
@@ -89,8 +90,10 @@ function ListItems({ list, query, setQuery }) {
       onClick={() => setQuery(item.name)}
       className="flex flex-col items-center border-2 border-blue-50 min-w-0 h-fit py-3 hover:-translate-y-1 hover:shadow-2xl hover:cursor-pointer ease-in-out duration-200 rounded-2xl"
     >
-      <img className="h-12.5 hover:animate-pulse" src={item.url} />
-      <div className="w-[90%] truncate text-center">{highlight(item.name)}</div>
+      <img className="min-h-12.5 hover:animate-pulse" src={item.url} />
+      <div className="w-[90%] truncate text-center lg:text-3xl md:text-2xl text-lg">
+        {highlight(item.name)}
+      </div>
     </li>
   ));
 }
