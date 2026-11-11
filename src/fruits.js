@@ -1,12 +1,12 @@
 export const initialProdList = [
   { name: "Apple", url: "https://openmoji.org/data/color/svg/1F34E.svg" },
   { name: "Banana", url: "https://openmoji.org/data/color/svg/1F34C.svg" },
-  { name: "Strawberry", url: "https://openmoji.org/data/color/svg/1F353.svg" },
   { name: "Watermelon", url: "https://openmoji.org/data/color/svg/1F349.svg" },
   { name: "Pineapple", url: "https://openmoji.org/data/color/svg/1F34D.svg" },
   { name: "Grapes", url: "https://openmoji.org/data/color/svg/1F347.svg" },
   { name: "Orange", url: "https://openmoji.org/data/color/svg/1F34A.svg" },
   { name: "Lemon", url: "https://openmoji.org/data/color/svg/1F34B.svg" },
+  { name: "Strawberry", url: "https://openmoji.org/data/color/svg/1F353.svg" },
   {
     name: "Lime",
     url: "https://openmoji.org/data/color/svg/1F34B-200D-1F7E9.svg",
